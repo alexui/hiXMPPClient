@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorUsernameEditTextBackground">
+
+    <ImageView
+        android:id="@+id/serverIconImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/openfire"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/serverNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:paddingTop="5dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/textColorPrimary"
+        android:text="selected"
+        android:textSize="25sp"
+        android:gravity="left"
+        android:layout_toEndOf="@id/serverIconImageView"
+        android:layout_toRightOf="@id/serverIconImageView"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <View
+        android:layout_below="@+id/serverNameTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="@color/textColorPrimary" />
+
+</RelativeLayout>

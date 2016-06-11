@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="HiWelcomeTheme" parent="HiMaterialTheme.Base">
+        <item name="android:background">@color/colorTextViewBackground</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="android:textColorPrimary">@color/colorPrimary</item>
+    </style>
+
+    <style name="HiMaterialTheme" parent="HiMaterialTheme.Base">
+
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="HiMaterialTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="SpinnerAsEditText">
+        <item name="android:background">@drawable/server_spinner</item>
+    </style>
+
+</resources>
