@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/HiMaterialTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".WelcomeActivity"
             android:theme="@style/HiWelcomeTheme">
 
             <intent-filter>

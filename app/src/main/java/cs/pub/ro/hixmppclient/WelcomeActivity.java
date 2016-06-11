@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 
 //pas 1 am scapat de Title Bar - Activity si requestWindowFeature
-public class MainActivity extends Activity {
+public class WelcomeActivity extends Activity {
 
     private ImageView logoImageView;
 
@@ -17,9 +17,9 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_welcome);
 
-        logoImageView = (ImageView) findViewById(R.id.logoImageViewLogIn);
+        logoImageView = (ImageView) findViewById(R.id.logoImageViewMain);
         logoImageView.setImageBitmap(Utils.getRoundedCornerBitmap(
                 BitmapFactory.decodeResource(this.getResources(),
                     R.drawable.hand)));
