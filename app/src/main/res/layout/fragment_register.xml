@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".mainActivity.welcome.LogInFragment">
+
+    <Button
+        android:id="@+id/registerButtonProceed"
+        style="@style/mainActivityButton"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:text="register" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/registerButtonProceed"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/serverNameSpinnerRegister"
+            style="@style/SpinnerWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dropDownVerticalOffset="0dp"
+            android:dropDownWidth="220dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+            android:id="@+id/hostAddressEditTextRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="192.168.1.100"
+            android:hint="Host Address: (port - opt)"
+            android:textColor="@color/textColorPrimary"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/usernameTextViewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Username:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBackground"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/usernameEditTextLRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/username_edit_text"
+            android:text="david.luiz"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/passwordTextViewRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Password:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/colorBackground"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/passwordEditTextRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/username_edit_text"
+            android:text="casablanca"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/optionalInformationTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Optional information"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorBackground"
+                android:textSize="20dp" />
+
+            <ImageView
+                android:id="@+id/optionalInfoIconImageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/optionalInformationTextView"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:src="@drawable/downside_triangle" />
+
+            <View
+                android:id="@+id/optionalInfoBar"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/optionalInfoIconImageView"
+                android:background="@color/textColorPrimary" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/layout_register_optional_info" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/statusSelectedItemIconImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/openfire"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/statusSelectedItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="statusSelected"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_toEndOf="@id/statusSelectedItemIconImageView"
+        android:layout_toRightOf="@id/statusSelectedItemIconImageView" />
+
+    <ImageView
+        android:id="@+id/statusSpinnerTriangleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/downside_triangle_black"
+        android:layout_alignTop="@+id/statusSelectedItemTextView"
+        android:layout_alignBottom="@+id/statusSelectedItemTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

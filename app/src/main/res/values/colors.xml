@@ -4,11 +4,12 @@
     <color name="colorPrimary">#ff8000</color>
     <color name="colorPrimaryDark">#332f2a</color>
     <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorPrimaryDark">#ffb380</color>
     <color name="colorBackground">#FFFFFF</color>
     <color name="navigationBarColor">#000000</color>
-    <color name="colorAccent">#332f2a</color>
+    <color name="colorAccent">#804000</color>
     <color name="colorTextViewBackground">#00ff8000</color>
 
-    <color name="colorUsernameEditTextBackground">#878787</color>
+    <color name="welcomeEditTextBackground">#333333</color>
     <color name="colorButtonsStroke">#FCFCFC</color>
 </resources>

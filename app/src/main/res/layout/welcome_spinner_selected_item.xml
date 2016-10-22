@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/welcomeEditTextBackground">
+
+    <ImageView
+        android:id="@+id/welcomeSelectedItemIconImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/openfire"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/welcomeSelectedItemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="30dp"
+        android:paddingRight="16dp"
+        android:textColor="@color/textColorPrimary"
+        android:text="welcomeSelected"
+        android:textSize="20sp"
+        android:gravity="left"
+        android:layout_toEndOf="@id/welcomeSelectedItemIconImageView"
+        android:layout_toRightOf="@id/welcomeSelectedItemIconImageView" />
+
+    <ImageView
+        android:id="@+id/welcomeSpinnerTriangleImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/downside_triangle"
+        android:layout_alignTop="@+id/welcomeSelectedItemTextView"
+        android:layout_alignBottom="@+id/welcomeSelectedItemTextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/welcomeEditTextBackground">
+
+    <ImageView
+        android:id="@+id/welcomeSpinnerIconImageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/welcomeSpinnerTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/welcomeSpinnerTextView"
+        android:src="@drawable/openfire" />
+
+    <TextView
+        android:id="@+id/welcomeSpinnerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@id/welcomeSpinnerIconImageView"
+        android:layout_toRightOf="@id/welcomeSpinnerIconImageView"
+        android:drawablePadding="20dp"
+        android:gravity="left"
+        android:paddingBottom="7dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="16dp"
+        android:paddingTop="6dp"
+        android:text="selected"
+        android:textColor="@color/textColorPrimary"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/welcomeSpinnerTextView"
+        android:background="@color/textColorPrimary" />
+
+</RelativeLayout>

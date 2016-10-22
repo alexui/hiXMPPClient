@@ -1,22 +1,20 @@
 <resources>
     <string name="app_name">HiXmppClient</string>
-    <string name="app_settings">Settings</string>
+    <string name="app_enable_otr">Enable OTR</string>
+    <string name="app_disable_otr">Disable OTR</string>
     <string name="app_search">Search</string>
     <string name="nav_item_messages">Messages</string>
     <string name="nav_item_contacts">Contacts</string>
-    <string name="nav_item_group_chats">Group Chats</string>
     <string name="nav_item_status">Status</string>
 
     <string-array name="nav_drawer_items">
         <item>@string/nav_item_messages</item>
         <item>@string/nav_item_contacts</item>
-        <item>@string/nav_item_group_chats</item>
         <item>@string/nav_item_status</item>
     </string-array>
 
     <string name="title_messages">Messages</string>
     <string name="title_contacts">Contacts</string>
-    <string name="title_group_chats">Group Chats</string>
     <string name="title_status">Status</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
